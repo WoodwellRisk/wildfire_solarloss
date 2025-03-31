@@ -349,7 +349,8 @@ def create_regional_bar_chart(data_df, title, filename, figsize=(14, 8), color_p
     
     # Create a color palette - using coolwarm_r for better visual distinction
     # This creates a gradient from cool to warm colors
-    colors = sns.color_palette(color_palette, len(data_df))
+    reversed_palette = 'coolwarm'
+    colors = sns.color_palette(reversed_palette, len(data_df))
     
     # Plot the data with improved spacing
     data_df.T.plot(kind='bar', ax=ax, color=colors, width=0.7, edgecolor='black', linewidth=0.5)
