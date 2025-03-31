@@ -85,7 +85,7 @@ The package generates several types of visualizations:
 
 ## Methodology
 
-The package calculates wildfire contributions to PM2.5 by subtracting no-fire scenarios from standard scenarios. It then uses the relationship between PM2.5 concentration and solar radiation reduction to estimate the impact on solar power potential. The relationship used in this assessment comes from https://pmc.ncbi.nlm.nih.gov/articles/PMC10114768/ but can be easily replaced with alternate equations.
+The package calculates wildfire contributions to PM2.5 by subtracting no-fire scenarios from standard scenarios. It then uses the relationship between PM2.5 concentration and solar radiation reduction to estimate the impact on solar power potential. The relationship used in this assessment comes from Song et al. (2022) https://pmc.ncbi.nlm.nih.gov/articles/PMC10114768/ but can be easily replaced with alternate equations.
 
 The solar potential change is calculated using the equation:
 ```
