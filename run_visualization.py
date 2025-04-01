@@ -218,16 +218,6 @@ def main(out_dir=DEFAULT_OUTPUT_DIR):
         # 3. Create regional analysis visualizations
         print("\n3. Creating regional analysis visualizations...")
         
-        # Calculate regional means for PM2.5
-        pm25_regional_means = viz.calculate_regional_means(pm25_scenario_dict)
-        
-        # Create regional bar chart for PM2.5
-        viz.create_regional_bar_chart(
-            pm25_regional_means,
-            "Regional Wildfire PM2.5 Concentration Across Scenarios",
-            "regional_wildfire_pm25.png"
-        )
-        
         # Calculate regional means for solar potential loss
         solar_regional_means = viz.calculate_regional_means(solar_scenario_dict)
         
